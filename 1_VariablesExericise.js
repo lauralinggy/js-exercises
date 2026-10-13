@@ -29,13 +29,14 @@ let dreamDestination = "Croatia"
 // - a variable called num2 with a value of greater than or equal to 1 and less
 // than or equal to 10
 let num1 = 5;
-let num2 = 10;
+let num2 = 7;
 
 // Exercise 6. Write a comment below explaining the difference between the rules
 // for num1 and num2 from Exercise 5. What numbers would be valid values for
 // num2 but not num1?
-// NUM1 HAS A RANGE THAT IS EXCLUSIVE SO IT HAS TO BE STRICTLY GREATER THAN 1 AND STRICTLY LESS THAN 10, SO 1 AND 10 ARE NOT ALLOWED.
-// NUM2 HAS A RANGE THAT ALLOWS FOR 1 AND 10 TO BE INCLUDED "EQUAL TO" IS THE KEY WORD HERE.
+//***answers****
+//num1 must be strictly between 1 and 10 so 1 and 10 cannot be included
+//num2 is inclusive of 1 and 10, hence the statement "or equal to"
 
 // Exercise 7. Now we will try some addition.
 // a. Assign the values of 4 and 6 to num1 and num2, respectively.
@@ -44,11 +45,13 @@ let num2 = 10;
 num1 = 4;
 num2 = 6;
 let theSum = num1 + num2;
+console.log(theSum); //10 
 
 // Exercise 8. Now we will try some multiplication.
 // Make a new variable called 'theProduct', multiply num1 and num2 and assign
 // the resulting value to 'theProduct'.
 let theProduct = num1 * num2;
+console.log (theProduct); //24
 
 // Exercise 9.
 // Make a new variable called 'statement' and using 'myName' and
@@ -56,7 +59,7 @@ let theProduct = num1 * num2;
 // value of statement to be:
 // "Hi, my name is <your name>, and I can't wait to visit <your destination>!"
 let statement = "Hi, my name is " + myName + ", and I can\'t wait to visit " + dreamDestination + "!";
-
+console.log(statement);
 
 // *NOTE* For the following exercises, put your answers in the line below
 // the description of each exercise. For example, below a prompt, you may see:
@@ -67,17 +70,17 @@ let statement = "Hi, my name is " + myName + ", and I can\'t wait to visit " + d
 // Exercise 10. What is the data type of the value stored in 'dreamDestination',
 // place your answer in the quotes below:
 
-const myAnswerForExercise10 = "string";
+const myAnswerForExercise10 = "string"; //text in quotes
 
 // Exercise 11. What is the data type of the value stored in 'product',
 // place your answer in the quotes below:
 
-const myAnswerForExercise11 = "number";
+const myAnswerForExercise11 = "number"; //24
 
 // Exercise 12. What do you think the value of emptyVariable is?
 // Place your answer below:
 
-const myAnswerForExercise12 = "undefined";
+const myAnswerForExercise12 = "undefined"; //declared but no value
 
 // Exercise 13. If
 const A = "R";
@@ -86,39 +89,39 @@ const C = 4;
 const D = "D";
 
 // What is the value of B + C
-const myAnswerForExercise13 = "";
+const myAnswerForExercise13 = "5"; //add them
 
 // Exercise 14 What is the value of
 // A + "n" + D
-const myAnswerForExercise14 = "";
+const myAnswerForExercise14 = "RnD"; //add them
 
 // Exercise 15 What is the value of
 // A + B * 2 + D + C / 2:
-const myAnswerForExercise15 = "";
+const myAnswerForExercise15 = "R2D2"; //follows order of operations PEMDAS
 
 // Exercise 16 What is the value of A * B
-const myAnswerForExercise16 = "";
+const myAnswerForExercise16 = "NaN"; //mutiplication is math
 
 // Exercise 17 What is the value of true || false
-const myAnswerForExercise17 = "";
+const myAnswerForExercise17 = "true"; // || or statement, at least one is true.
 
 // Exercise 18 What is the value of 1 === "1"
-const myAnswerForExercise18 = "";
+const myAnswerForExercise18 = "false"; //strict equality, type and value must match
 
 // Exercise 19 What is the value of 1 == "1"
-const myAnswerForExercise19 = "";
+const myAnswerForExercise19 = "true"; //loose equality, follows type first "1" becomes 1.
 
 // Exercise 20 What is the value of 1 < 1
-const myAnswerForExercise20 = "";
+const myAnswerForExercise20 = "false"; //1 equals 1
 
 // Exercise 21 What is the value of 1 < 2 < 3
-const myAnswerForExercise21 = "";
+const myAnswerForExercise21 = "true"; //
 
 // Exercise 22 What is the value of 2 < 1 < 3
-const myAnswerForExercise22 = "";
+const myAnswerForExercise22 = "true"; // 2<1 false, but falst becomes 0 so 0<3 is true.
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-
+// 5 on the challenging scale, I utilized udemy and https://developer.mozilla.org/en-US/docs/Web/JavaScript
 // Commit your file to GitHub.
