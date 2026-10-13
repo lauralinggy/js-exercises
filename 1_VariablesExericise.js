@@ -12,38 +12,51 @@
 // Data Types and Variables
 
 // Exercise 1. Simply declare a variable named 'emptyVariable'
+let emptyVariable;
 
 // Exercise 2. Declare a variable called 'myName'
+let myName;
 
 // Exercise 3. Assign your name as the value for 'myName'
+myName = "Laura";
 
 // Exercise 4. Declare a variable called dreamDestination and give it the value
 // of what your dream vacation destination is.
+let dreamDestination = "Croatia"
 
 // Exercise 5. Make the following variables and assignments
 // - a variable called num1 with a value greater than 1 and less than 10
 // - a variable called num2 with a value of greater than or equal to 1 and less
 // than or equal to 10
+let num1 = 5;
+let num2 = 10;
 
 // Exercise 6. Write a comment below explaining the difference between the rules
 // for num1 and num2 from Exercise 5. What numbers would be valid values for
 // num2 but not num1?
-//
+// NUM1 HAS A RANGE THAT IS EXCLUSIVE SO IT HAS TO BE STRICTLY GREATER THAN 1 AND STRICTLY LESS THAN 10, SO 1 AND 10 ARE NOT ALLOWED.
+// NUM2 HAS A RANGE THAT ALLOWS FOR 1 AND 10 TO BE INCLUDED "EQUAL TO" IS THE KEY WORD HERE.
 
 // Exercise 7. Now we will try some addition.
 // a. Assign the values of 4 and 6 to num1 and num2, respectively.
 // b. Make a new variable called 'theSum', and use 'num1' and
 // 'num2' to assign its value using the "+" operator.
+num1 = 4;
+num2 = 6;
+let theSum = num1 + num2;
 
 // Exercise 8. Now we will try some multiplication.
 // Make a new variable called 'theProduct', multiply num1 and num2 and assign
 // the resulting value to 'theProduct'.
+let theProduct = num1 * num2;
 
 // Exercise 9.
 // Make a new variable called 'statement' and using 'myName' and
 // 'dreamDestination' and the concatenation method of your choice, make the
 // value of statement to be:
 // "Hi, my name is <your name>, and I can't wait to visit <your destination>!"
+let statement = "Hi, my name is " + myName + ", and I can\'t wait to visit " + dreamDestination + "!";
+
 
 // *NOTE* For the following exercises, put your answers in the line below
 // the description of each exercise. For example, below a prompt, you may see:
@@ -54,17 +67,17 @@
 // Exercise 10. What is the data type of the value stored in 'dreamDestination',
 // place your answer in the quotes below:
 
-const myAnswerForExercise10 = "";
+const myAnswerForExercise10 = "string";
 
 // Exercise 11. What is the data type of the value stored in 'product',
 // place your answer in the quotes below:
 
-const myAnswerForExercise11 = "";
+const myAnswerForExercise11 = "number";
 
 // Exercise 12. What do you think the value of emptyVariable is?
 // Place your answer below:
 
-const myAnswerForExercise12 = "";
+const myAnswerForExercise12 = "undefined";
 
 // Exercise 13. If
 const A = "R";
