@@ -56,6 +56,13 @@ function exercise1(num1) {
   // Write your code for exercise 1 below here:
   // ------------------------------------------
 
+  // notes -- && mean AND, both sides must be true. || means OR, at least one side must be true ! means NOT, flips true to false.
+  // set default message, check if num1 is bigger than 10, if yes change the message; 10 does not count
+  // answer1 = "num1 is small" --> if (num1 > 10)   answer1 = `The value of num1 is ${num1} and is greater than 10
+answer1 = "num1 is small";
+if (num1 > 10) {
+  answer1 = `The value of num1 is ${num1} and is greater than 10`;
+}
   // ------------------------------------------
   // And above here
   // ------------------------------------------
@@ -78,6 +85,12 @@ function exercise2(num2) {
   // Write your code for the exercise below here:
   // --------------------------------------------
 
+  //check if num2 is even; if even, set answer2 to "<num2> is even"; otherwise, set answer2 to "<num2> is odd"
+if (num2 % 2 === 0) {
+  answer2 = `${num2} is even`;
+} else {
+  answer2 = `${num2} is odd`;
+}
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -99,6 +112,16 @@ function exercise3(num3) {
   // Write your code for the exercise below here:
   // --------------------------------------------
 
+  //check if num3 is greater than 0, if yes, answer3 is num3 is positive, otherwise, check if num3 is less than 0, if yes, answer 3 is num3 is negative, otherwise answer3 is num3 is zero
+
+    if (num3 > 0) {
+    answer3 = `${num3} is positive`;
+  } else if (num3 < 0) {
+    answer3 = `${num3} is negative`;
+  } else {
+    answer3 = `${num3} is zero`;
+  }
+
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -117,6 +140,13 @@ function exercise4(varA, varB) {
   // Write your code for the exercise below here:
   // --------------------------------------------
 
+  // check if varA and varB are equal, if yes, answer4 is "varA and varB are equal", otherwise, answer4 is "var a and varB differ"
+
+  if (varA === varB) {
+    answer4 = "varA and varB are equal";
+  } else {
+    answer4 = "varA and varB differ";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -128,6 +158,9 @@ function exercise4(varA, varB) {
 // seemed like they are equal, but would not pass the tests? In your analysis
 // consider other data types beside strings and variables.
 
+// the symbol === is strict and has to follow strict rules, character for character, same value and same type. an example  is 5 === "5", this compares a string and a number, so they are not equal.
+// exampl 2 "cat" === "Cat" are not equal. 
+
 // EXERCISE 6.
 // Here, assign the value of true to answer6 if:
 // `varA` and `varB` are equal, but `varA` or `varB` does not equal `varC`
@@ -137,6 +170,14 @@ function exercise6(varA, varB, varC) {
   // --------------------------------------------
   // Write your code for the exercise below here:
   // --------------------------------------------
+
+// check if varA equals varB AND varA is not equal to varC or varB is not equal to varC; if yes, answer6 us true, otherwise, answer6 is false;! MEANS NOT
+
+  if (varA === varB && (varA !== varC || varB !== varC)) {
+    answer6 = true;
+  } else {
+    answer6 = false;
+  }
 
   // --------------------------------------------
   // And above here
@@ -163,6 +204,27 @@ function exercise7(num7) {
   // Write your code for the exercise below here:
   // --------------------------------------------
 
+  //if num7 1, answer7 ="you won" , if num7 is 7, answer7 is "you are lucky"
+
+  switch (num7) {
+    //if num7 is 1
+    case 1:
+      answer7 ="You won!";
+      break;
+    case 7: 
+      answer7 = "You are lucky!";
+      break;
+    case 101:
+        answer7 = "Welcome to coding 101!";
+        break;
+    case 1000000:
+      answer7 = "You are one in a million!";
+      break;
+
+    //if num doesn't match any case above
+    default:
+      answer7 = "Thanks for that!";
+  }
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -180,6 +242,13 @@ function exercise8(amount1, amount2, minimum, maximum) {
   // Write your code for the exercise below here:
   // --------------------------------------------
 
+//check if answer8 is not too small AND not too big AND amount2 is not too small AND not too big., if yes, answer 8 is true. otherwise false. 
+
+if (amount1 >= minimum && amount1 <= maximum && amount2 >= minimum && amount2 <= maximum) {
+  answer8 = true;
+} else {
+  answer8 = false;
+}
   // --------------------------------------------
   // And above here
   // --------------------------------------------
@@ -229,6 +298,8 @@ function exercise10(num10) {
 
 // Congrats, you made it to the end! You rock!
 // Did you find this easy or hard? If you used references, which ones helped you?
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
 // Please answer in a comment below.
 //
 
