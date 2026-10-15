@@ -125,3 +125,4 @@ const myAnswerForExercise22 = "true"; // 2<1 false, but falst becomes 0 so 0<3 i
 // Please answer in a comment below.
 // 5 on the challenging scale, I utilized udemy and https://developer.mozilla.org/en-US/docs/Web/JavaScript
 // Commit your file to GitHub.
+testest
